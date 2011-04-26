@@ -4,6 +4,8 @@ package com.sanvi.tarotmeaning;
 import java.io.InputStream;
 import java.util.List;
 
+import net.youmi.android.AdManager;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -28,6 +30,12 @@ import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class MainActivity extends Activity {
+	
+	  static{ 
+	    	AdManager.init("bed7e32215f0f647", "63b1afaddcce4102", 30, false,"2.1");   
+	    }
+	  
+	  
 	List<Card> cards;
     @Override
     public void onCreate(Bundle savedInstanceState) {
